@@ -1,0 +1,40 @@
+{
+    "name": "keen-io/keen-io-zf2",
+    "type": "library",
+    "license": "MIT",
+    "description" : "Zend Framework 2 module for using KeenIO",
+    "keywords": [
+        "keen",
+        "keen.io",
+        "events",
+        "analytics",
+        "zf2"
+    ],
+    "homepage": "https://github.com/keenlabs/KeenClient-PHP-ZF2",
+    "authors": [
+        {
+            "name": "Michaël Gallego",
+            "email": "mic.gallego@gmail.com",
+            "homepage": "http://www.michaelgallego.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "keen-io/keen-io": "dev-master",
+        "zendframework/zend-modulemanager": "~2.0",
+        "zendframework/zend-servicemanager": "~2.0"
+    },
+    "require-dev": {
+        "zendframework/zendframework": "2.*",
+        "phpunit/phpunit": "~3.7"
+    },
+    "autoload": {
+        "psr-0": {
+            "KeenIOModule\\": "src/"
+        },
+        "classmap": [
+            "./"
+        ]
+    }
+}
