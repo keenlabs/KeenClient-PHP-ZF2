@@ -1,42 +1,32 @@
 KeenIOModule
 ============
 
-Introduction
-------------
-
-KeenIOModule is a Zend Framework 2 module that integrates with the [KeenIO client](https://github.com/keenlabs/KeenClient-PHP)
-
-Requirements
-------------
-* PHP 5.3
-* [Zend Framework 2](https://github.com/zendframework/zf2)
-* [KeenIO PHP client](https://github.com/keenlabs/KeenClient-PHP)
+KeenIOModule is a Zend Framework 2 module that integrates with 
+the [KeenIO client](https://github.com/keenlabs/KeenClient-PHP)
 
 Installation
 ------------
 
-Add "keen-io/keen-io-zf2" to your composer.json file and update your dependencies:
+To install KeenIOModule, use composer:
 
-```
-{
-    "require": {
-        "keen-io/keen-io-zf2": "~1.0"
-    }
-}
+```sh
+php composer.phar require keen-io/keen-io-zf2:~1.0
 ```
 
-Enable KeenIOModule in your `application.config.php`, then copy-paste the file `keen_io.local.php.dist` (that
-you can find in the `config` folder of the module) to your `autoload` folder (don't forget to remove the .dist at
-the end!).
+Enable KeenIOModule in your `application.config.php`, then copy the file
+`vendor/keen-io/keen-io-zf2/config/keen_io.local.php.dist` to the 
+`config/autoload` directory of your application (don't forget to remove the 
+`.dist` extension from the file name!).
 
 Usage
 -----
 
-The module registers the KeenIO client to the ZF 2 service manager. You can therefore get it like
-this:
+This module registers the KeenIO client in your application's service manager.
+You can get it by requesting the service `KeenIO\Client\KeenIOClient`:
 
 ```php
 $keenIOClient = $serviceManager->get('KeenIO\Client\KeenIOClient');
 ```
 
-For more information, please refer to the documentation of KeenIOClient to how to use it.
+For more information on the usage of `KeenIO`, please refer to the [documentation of the PHP client](https://github.com/keenlabs/KeenClient-PHP) and the 
+main [keen.io documentation](https://keen.io/docs/).
