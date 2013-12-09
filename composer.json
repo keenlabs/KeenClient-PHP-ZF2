@@ -18,10 +18,9 @@
             "homepage": "http://www.michaelgallego.fr"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "keen-io/keen-io": "dev-master",
+        "keen-io/keen-io": "~1.1",
         "zendframework/zend-modulemanager": "~2.0",
         "zendframework/zend-servicemanager": "~2.0"
     },
