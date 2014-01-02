@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "keen-io/keen-io": "~1.1",
+        "keen-io/keen-io": "~2.1",
         "zendframework/zend-modulemanager": "~2.0",
         "zendframework/zend-servicemanager": "~2.0"
     },
