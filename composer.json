@@ -22,7 +22,8 @@
         "php": ">=5.3.3",
         "keen-io/keen-io": "~2.0",
         "zendframework/zend-modulemanager": "~2.0",
-        "zendframework/zend-servicemanager": "~2.0"
+        "zendframework/zend-servicemanager": "~2.0",
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "require-dev": {
         "zendframework/zendframework": "2.*",
@@ -35,5 +36,13 @@
         "classmap": [
             "./"
         ]
+    },
+    "scripts": {
+      "phpcs": [
+        "./vendor/bin/phpcs --colors --standard=PSR2 src"
+      ],
+      "phpunit": [
+        "./vendor/bin/phpunit"
+      ]
     }
 }
